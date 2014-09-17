@@ -5,6 +5,7 @@
 // ====||==========================
 
 // Override any foundation variables (from foundation_and_overrides.css.scss) here.
+@import "foundation_and_overrides";
 
 // ----||--------------------------
 //     || LANDING PAGE
@@ -16,7 +17,30 @@
 // $featured-content-header-font-size: 1.6em;
 // $project-screenshot-left-margin: -22px;
 
+.top-bar-section {
+  ul.right a {
+    &:hover {
+      color: $primary-color;
+    }
+
+    li a {
+      &:hover {
+        i {
+          color: $primary-color;
+        }
+      }
+      i {
+        cursor: pointer;
+      }
+    } 
+  } 
+}
+
 .profile-row {
+  //border-style: none;
+  .bio h2 {
+    color: white;
+  }
 }
 
 .profile {
@@ -52,63 +76,56 @@ section.featured-project {
 
 // $project-screenshot-left-margin: -22px;
 
-.project {
+.portfolio {
 
-  .screenshot {
-
-    img {
-    }
+  h2 {
+    padding-left: 1.3%;
   }
 
-  .description {
-    h3 {
+  .project {
+    padding-left: 5%;
+
+    .screenshot {
+
+      img {
+      }
     }
 
-    p {
-    }
-
-    .source-link {
-
-      i {
+    .description {
+      h3 {
       }
 
-      a {
+      p {
+      }
 
-        &:hover {
+      .source-link {
+
+        i {
+        }
+
+        a {
+
+          &:hover {
+          }
         }
       }
     }
+  } 
+}
+
+.about {
+  h2 {
+    padding-left: 1.3%;
+  }
+  .everything-else {
+    padding-left: 5%;
   }
 }
 
-// ----||--------------------------
-//     || BLOG
-// ====||==========================
-
-/* Blog articles */
-div.articles {
-  hr {
-  }
-}  
-
-ul.read_next {                
-  li { 
-    a {
-    }
-    &:last-child {
-    }
-  }
-}
-
-aside {
-  ul {
-  }
-
-  ul.credit{
-    time {
-    }
-  }
-
-  ul.tags li {
-  }
-}
+/* .menu-icon {
+  //a {
+    &:hover {
+        color: $primary-color;
+      }
+  //} 
+} */

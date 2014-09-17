@@ -71,6 +71,10 @@ section.featured-project {
     @include grid-row;
     @include grid-column(12);
   }
+
+  #footer {
+    text-align: center;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -86,4 +90,5 @@ section.featured-project {
   section.latest-from-blog, section.featured-project {
     @include grid-column(6);
   }
+
 }

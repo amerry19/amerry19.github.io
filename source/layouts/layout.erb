@@ -80,13 +80,14 @@
             "http://github.com/#{github_username}"
           ) %>
           <li class="divider"></li>
+          <li class="about"><a href="/about.html">About</a></li>
+          <li class="divider"></li>
           <li class="portfolio"><a href="/portfolio.html">Portfolio</a></li>
           <li class="divider"></li>
           <% if resume %>
             <li class="resume"><a href="/<%= resume %>">Résumé</a></li>
             <li class="divider"></li>
           <% end %>
-          <li class="blog"><a href="/blog">Blog</a></li>
         </ul>
       </nav>
       <!-- End Header and Nav -->
@@ -104,7 +105,7 @@
     <!-- Footer -->
     <footer class="row" id="footer">
       <div class="content">
-        <p>Built with <i class="icon-heart"></i> in <%= city %> by <%= link_to full_name, "http://github.com/#{github_username}" %></p>
+        <p>Built with <i class="icon-heart"></i> in <%= city %> by <%= link_to creator, "http://github.com/#{creator_github_username}" %></p>
       </div>
     </footer>
 
