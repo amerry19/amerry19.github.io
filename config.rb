@@ -151,3 +151,13 @@ configure :build do
   # Or use a different image path
   # set :http_path, "/Content/images/"
 end
+
+=begin
+activate :s3_sync do |config|
+  config.bucket                 = 'juliannefarrar.com' 
+  config.region                 = 'us-west-1'
+  config.aws_access_key_id      = ENV['AWS_ACCESS_KEY']
+  config.aws_secret_access_key  = ENV['AWS_ACCESS_SECRET']
+  config.after_build            = true
+end
+=end
