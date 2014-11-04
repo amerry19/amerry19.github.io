@@ -21,8 +21,8 @@ activate :sprockets
 
 set :full_name, "Julianne Farrar"
 set :city, "Monterey, CA"
-set :resume, "Merry_Adam_Resume.pdf" # Set to filename of resume PDF in source directory.
-set :google_analytics_tracking_id, "UA-111111111-11"
+set :resume, "Farrar_Julianne_Resume.pdf" # Set to filename of resume PDF in source directory.
+#set :google_analytics_tracking_id, "UA-54937166-1"
 
 set :creator, "Merrily"
 set :creator_github_username, "amerry19"
@@ -37,7 +37,7 @@ set :creator_github_username, "amerry19"
 set :google_plus_user_id, nil
 # This is your shortname for your profile URL: http://facebook.com/ada.lovelace
 set :facebook_profile_name, nil
-set :twitter_username, "juliannefarrar"
+set :twitter_username, nil #"juliannefarrar"
 # This is your shortname for your profile URL: http://linkedin.com/in/adalovelace
 set :linkedin_profile_name, "juliannefarrar"
 set :dribbble_username, nil
